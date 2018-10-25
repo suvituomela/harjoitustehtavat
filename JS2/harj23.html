@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-2. Valintarakenteet, harjoitustehtävä 3</title>
+</head>
+<body>
+<script language="JavaScript">
+  'use strict';
+
+  console.log('Hei, maailma!');
+
+  let sukupuoli, hemoglobiini;
+  sukupuoli = prompt('Oletko mies vai nainen?');
+  hemoglobiini = prompt('Mikä hemoglobiinisi on?')
+
+
+  if (sukupuoli == 'nainen') {
+    if (hemoglobiini < 117) {
+      document.write('Hemoglogiinisi on alhainen.')
+    } else if (hemoglobiini >= 117 && hemoglobiini <= 175) {
+      document.write('Hemoglobiinisi on normaali.')
+    } else if (hemoglobiini > 175) {
+      document.write('Hemoglobiinisi on korkea.')
+    }
+  }
+  if (sukupuoli == 'mies') {
+    if (hemoglobiini < 134) {
+      document.write('Hemoglogiinisi on alhainen.')
+    } else if (hemoglobiini >= 134 && hemoglobiini <= 195) {
+      document.write('Hemoglobiinisi on normaali.')
+    } else if (hemoglobiini > 195) {
+      document.write('Hemoglobiinisi on korkea.')
+    }
+  } if (sukupuoli != 'nainen' && hemoglobiini != 'mies') {
+    document.write('Ei pysty määrittämään hemoglobiinia.')
+  }
+
+
+
+
+
+</script>
+</body>
+</html>

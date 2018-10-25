@@ -1,0 +1,4 @@
+# nameOfTheRepo
+# mediatekniikka
+# harjoitustehtavat
+# harjoitustehtavat

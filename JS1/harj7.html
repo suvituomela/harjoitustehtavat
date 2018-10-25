@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-1. Vuorovaikutteiset ohjelmat, harjoitustehtävä 7</title>
+</head>
+<body>
+<script language="JavaScript">
+  'use strict';
+
+  console.log('Hei, maailma!');
+
+  function desimaali(x) {
+    return Number.parseFloat(x).toFixed(2);
+  }
+
+  let saldo;
+  let korkoprosentti;
+  let vuosikorko;
+  let vuosisaldo;
+
+  saldo = prompt('Tilin saldo?');
+  korkoprosentti = prompt('Korkoprosentti?');
+
+  vuosikorko = saldo * (korkoprosentti/100);
+  vuosisaldo = +saldo + +vuosikorko;
+
+
+  document.write('Vuosikorko: '+ desimaali(vuosikorko)+ '€, saldo vuoden lopussa: ' + desimaali(vuosisaldo) + '€');
+
+
+
+</script>
+</body>
+</html>

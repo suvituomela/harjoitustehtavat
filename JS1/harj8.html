@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-1. Vuorovaikutteiset ohjelmat, harjoitustehtävä 8</title>
+</head>
+<body>
+<script language="JavaScript">
+  'use strict';
+
+  console.log('Hei, maailma!');
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+
+  let yes, noppa1, noppa2, summa2;
+  noppa1 = getRandomInt(6);
+  noppa2 = getRandomInt(6);
+  summa2 = +noppa1 + +noppa2;
+  yes = (prompt('Heitetäänkö noppaa? yes/no'));
+  if (yes == 'yes'){
+    document.write('Heitit silmäluvut ' +noppa1 + ' ja ' + +noppa2 + ', joiden summa on ' + summa2 + '.');
+  } else {
+    document.write('Et heittänyt noppaa.');
+  }
+
+
+
+</script>
+</body>
+</html>

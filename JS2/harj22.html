@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-2. Valintarakenteet, harjoitustehtävä 2</title>
+</head>
+<body>
+<script language="JavaScript">
+  'use strict';
+
+  console.log('Hei, maailma!');
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+
+  let nimi;
+  nimi = prompt('Kerro nimesi, velhokokelas!');
+
+  let arpa;
+  arpa = getRandomInt(4);
+
+console.log(arpa)
+  if (arpa == 0) {
+    document.write(nimi  + ', olet Rohkelikko.')
+  } else if (arpa == 1) {
+    document.write(nimi  + ', olet Luihuinen.')
+  } else if (arpa == 2) {
+    document.write(nimi  + ', olet Puuskupuh.')
+  } else if (arpa == 3) {
+    document.write(nimi  + ', olet Korpinkynsi.')
+  }
+
+
+
+
+</script>
+</body>
+</html>

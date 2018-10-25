@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-1. Vuorovaikutteiset ohjelmat, harjoitustehtävä 6</title>
+</head>
+<body>
+<script language="JavaScript">
+  'use strict';
+
+  console.log('Hei, maailma!');
+
+  function desimaali(x) {
+    return Number.parseFloat(x).toFixed(2);
+  }
+
+  let leiviska, naula, luoti, nykyLe, nykyNa, nykyLu, nykyMitta, kilot, grammat;
+  leiviska = prompt("Montako leiviskää?");
+  naula = prompt("Montako naulaa?");
+  luoti = prompt("Montako luotia?");
+  nykyLu = 13.3;
+  nykyNa = 32 * +nykyLu;
+  nykyLe = 20 * +nykyNa;
+  nykyMitta = +luoti * +nykyLu + +naula * +nykyNa + +leiviska * +nykyLe;
+  kilot = (Math.floor(+nykyMitta/1000));
+  grammat = +nykyMitta - +kilot*1000;
+  document.write("Massa nykymittojen mukaan: "+ kilot + "kg ja " + (desimaali(grammat)) + "g");
+
+
+
+
+</script>
+</body>
+</html>
