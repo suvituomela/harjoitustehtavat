@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-4. Taulukot, harjoitustehtävä 4</title>
+</head>
+<body>
+
+<script language="JavaScript">
+  'use strict';
+
+  console.log('Hei, maailma!');
+  
+  function compareFunction (a, b) {
+    return a-b;
+  }
+
+  let luku = prompt('Anna luku.');
+  let lista = [];
+
+    while (luku < 0 || luku > 0) {
+      lista.push(luku);
+      luku = prompt('Anna uusi luku.');
+    }
+
+    document.write('Antamasi luvut suurimmasta pienimpään: ' + lista.sort(compareFunction).reverse());
+
+</script>
+
+</body>
+</html>

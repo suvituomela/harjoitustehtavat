@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-4. Taulukot, harjoitustehtävä 1</title>
+</head>
+<body>
+
+<script language="JavaScript">
+  'use strict';
+
+  console.log('Hei, maailma!');
+
+  alert('Syötä viisi lukua, niin tulostan ne käänteisessä järjestyksessä.')
+
+  let lista = [];
+  let maara = 5;
+  let i;
+
+  for (i=0; i<maara; i++) {
+    lista.push(prompt('Syötä lukuja.'));
+  }
+
+  document.write('Tässä syöttämäsi luvut käänteisessä järjestyksessä: ' + lista.reverse());
+
+</script>
+
+</body>
+</html>
