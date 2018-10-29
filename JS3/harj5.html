@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-3. Toistorakenteet, harjoitustehtävä 5</title>
+</head>
+<body>
+
+<p id="alkuluku"></p>
+
+<script language="JavaScript">
+  'use strict';
+
+  console.log('Hei, maailma!');
+
+  let i, kokonaisluku, txt;
+  alert('Tarkastetaan, onko luku alkuluku.');
+  kokonaisluku = prompt('Anna kokonaisluku:');
+  if (+kokonaisluku === 2) {
+    txt = ('Kokonaisluku ' + kokonaisluku + ' on alkuluku.');
+    document.getElementById('alkuluku').innerHTML = txt;
+  } else if (+kokonaisluku === 1) {
+    txt = ('Kokonaisluku ' + kokonaisluku + ' ei ole alkuluku.');
+    document.getElementById('alkuluku').innerHTML = txt;
+  }
+  for (i = 2; i < kokonaisluku; i++) {
+    if (kokonaisluku % i === 0) {
+      txt = ('Kokonaisluku ' + kokonaisluku + ' ei ole alkuluku.');
+      document.getElementById('alkuluku').innerHTML = txt;
+      break;
+    } else {
+      txt = ('Kokonaisluku ' + kokonaisluku + ' on alkuluku.');
+      document.getElementById('alkuluku').innerHTML = txt;
+    }
+  }
+
+</script>
+
+</body>
+</html>

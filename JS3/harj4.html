@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-3. Toistorakenteet, harjoitustehtävä 4</title>
+</head>
+<body>
+
+<p id="arpakuutiot"></p>
+
+<script language="JavaScript">
+  'use strict';
+
+  console.log('Hei, maailma!');
+
+  let i, maara, heitto, summa = 0, txt;
+  alert('Heitetään useampi noppa ja tulostetaan silmälukujen summa');
+  maara = prompt('Montako noppaa haluat heittää?');
+  for (i = 0; i < maara; i++) {
+    heitto = Math.floor(Math.random() * 6) + 1;
+    summa += heitto;
+  }
+  txt = ('Heittämiesi noppien silmälukujen summa on: ' + summa);
+  document.getElementById('arpakuutiot').innerHTML = txt;
+
+
+
+
+
+
+</script>
+</body>
+</html>

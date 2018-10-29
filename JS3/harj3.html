@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-3. Toistorakenteet, harjoitustehtävä 3</title>
+</head>
+<body>
+
+<p id="karkausvuodet"></p>
+
+<ul id="lista">
+</ul>
+
+<script language="JavaScript">
+  'use strict';
+
+  console.log('Hei, maailma!');
+
+    let alku, loppu, tulos;
+    alert("Tulostetaan karkausvuodet antamaltasi aikaväliltä.");
+    alku = prompt("Anna aloitusvuosi:");
+    loppu = prompt("Anna loppuvuosi:");
+    for (alku; alku <= loppu; alku++) {
+      if ((alku % 4 == 0 && alku % 100 != 0) || alku % 400 == 0){
+        tulos = alku;
+        let node = document.createElement("LI");
+        let textnode = document.createTextNode(tulos);
+        node.appendChild(textnode);
+        document.getElementById("lista").appendChild(node);
+      }
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-3. Toistorakenteet, harjoitustehtävä 1</title>
+</head>
+<body>
+<script language="JavaScript">
+  'use strict';
+
+  console.log('Hei, maailma!');
+
+    let numero = prompt('Anna jokin kokonaisluku.');
+
+    document.write('Lukusi kertoma on ' + kertoma(+numero) + '.');
+
+
+
+  function kertoma(numero) {
+    if (numero < 0)
+      return 1;
+    else if (numero == 0)
+      return 1;
+    else {
+      return (numero * kertoma(numero - 1));
+    }
+  }
+
+
+
+</script>
+</body>
+</html>
