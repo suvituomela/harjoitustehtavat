@@ -11,14 +11,10 @@ const uul = document.getElementsByTagName('ul')[0];
 uul.setAttribute('id','ul');
 
 
-for (let i=0; i < kuvat.length; i++) {
+for (let i=0; i < kuvat.length; i+=1) {
   let lii = document.createElement('li');
   let kuva = document.createElement('img');
 
   const ul = document.querySelector('#ul');
-  const html =
-      "<li><img src="+kuvat[0]+"></li><br>" +
-      "<li><img src="+kuvat[1]+"></li><br>" + "<li><img src="+kuvat[2]+"></li><br>" +
-      "<li><img src="+kuvat[3]+"></li><br>" + "<li><img src="+kuvat[4]+"></li><br>";
-  ul.innerHTML = html;
+  ul.innerHTML += '<li><img src=' + kuvat[i] + '></li>';
 }
