@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-6. Funktiot, harjoitustehtävä 4</title>
+</head>
+<body>
+<script language="JavaScript">
+  'use strict';
+
+  console.log('Hei, maailma!');
+
+  function compareFunction (a, b) {
+    return a-b;
+  }
+
+  let lista = [];
+  let maara = 3;
+  let i;
+
+  for (i=0; i<maara; i++) {
+    lista.push(prompt('Anna jokin luku.'));
+  }
+
+  document.write('Luvuistasi suurin on ' + suurin() +'.');
+
+
+  function suurin() {
+    return lista.sort(compareFunction).reverse().shift();
+  }
+
+
+
+</script>
+</body>
+</html>
