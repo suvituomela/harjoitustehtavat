@@ -8,7 +8,7 @@ function etsiSarjoja() {
     app.innerHTML = series.map(({show}) => `
 <div class="container">
             <div id="kuva">
-            ${show.image ? `<img src="${show.image.medium}">` : ''}
+            ${show.image ? `<img src="${show.image.medium}">` : '<img style="z-index: -1" src="photo.png">'}
             </div>
             <div>
                <h4>${show.name}</h4>
